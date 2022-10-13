@@ -25,4 +25,6 @@ _rename.log 字典日志，，，存同级目录。。。 多个rename， Append
 
 ### 使用方法
 
-fastcopy先执行一次同步，生成出错日志，拷贝到脚本当前目录，然后执行脚本（in macOS)
+fastcopy先执行一次同步，生成出错日志，拷贝到脚本当前目录
+服务器端共享D:\SHR 为  shr$ (隐藏可写共享)， mac挂载这个12.103\shr$为本地磁盘路径 /Volumes/shr$
+然后执行脚本（in macOS)  →  python3 ./main.py
