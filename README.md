@@ -12,6 +12,7 @@
 ### 算法1
 
 将所有的目录进行Rename,同时将新旧名字放进一个字典，key value
+
 将所有的文件进行Rename(这里判断最后一位是否短名了? ,是短名跳过，是长名，，， 判断BaseDIR是否在以上的改目录名之内，在的话先格式化一下改后的名字
 
 
@@ -19,12 +20,13 @@
 ### 算法2
 
 按照FastCopy.log的列表顺序，从上至下,一个个的rename，凡是文件的rename要反溯其BaseDir是否和上一个rename的文件夹同名，如果是的化，要改baseDir否则rename会失败。
+
 _rename.log 字典日志，，，存同级目录。。。 多个rename， Append 进去... 加上时间。
 
 
 
 ### 使用方法
 
-fastcopy先执行一次同步，生成出错日志，拷贝到脚本当前目录
-服务器端共享D:\SHR 为  shr$ (隐藏可写共享)， mac挂载这个12.103\shr$为本地磁盘路径 /Volumes/shr$
-然后执行脚本（in macOS)  →  python3 ./main.py
+1. fastcopy先执行一次同步，生成出错日志，拷贝到脚本当前目录
+2. 服务器端共享D:\SHR 为  shr$ (隐藏可写共享)， mac挂载这个12.103\shr$为本地磁盘路径 /Volumes/shr$
+3. 执行脚本（in macOS)  →  python3 ./main.py
