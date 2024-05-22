@@ -3,5 +3,5 @@
 /.vscode
 /FastCopy.log
 /FastCopy_SHR2.log
-/^ext
+,ext/
 /testLog.log
