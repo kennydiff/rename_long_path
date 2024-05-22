@@ -126,7 +126,7 @@ with open("./FastCopy.log") as f:
                 "CreateDirectory(The filename, directory name, or volume label syntax is incorrect.123)"
         ) >= 0):
             str_long_full_path = item.replace(
-                "CreateDirectory(The filename, directory name, or volume label syntax is incorrect.123) : \\\\192.168.12.33\\ampool\\12_103_file_svr",
+                "CreateDirectory(The filename, directory name, or volume label syntax is incorrect.123) : \\\\172.17.17.17\\shr",
                 "/Volumes/shr$",
             )
             str_long_full_path = str_long_full_path.replace("\\", "/")
@@ -136,7 +136,7 @@ with open("./FastCopy.log") as f:
                 "CreateFile(The filename, directory name, or volume label syntax is incorrect.123)"
         ) >= 0):
             str_long_full_file = item.replace(
-                "CreateFile(The filename, directory name, or volume label syntax is incorrect.123) : \\\\192.168.12.33\\ampool\\12_103_file_svr",
+                "CreateFile(The filename, directory name, or volume label syntax is incorrect.123) : \\\\172.17.17.17\\shr",
                 "/Volumes/shr$",
             )
             str_long_full_file = str_long_full_file.replace("\\", "/")
